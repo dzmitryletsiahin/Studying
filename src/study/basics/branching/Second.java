@@ -1,5 +1,6 @@
 package study.basics.branching;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Second {
@@ -10,6 +11,10 @@ public class Second {
         int c = scanner.nextInt();
         int d = scanner.nextInt();
 
-        System.out.println(Math.max(Math.min(a,b), Math.min(c,d)));
+        calculateMaxFromMin(a, b , c ,d);
+    }
+
+    public static void calculateMaxFromMin(int a, int b, int c, int d) {
+        Math.max(Math.min(a, b), Math.min(c, d));
     }
 }
